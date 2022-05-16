@@ -508,7 +508,7 @@ endif()
 
 
 set(OPENSSL_INCLUDE_DIR "/usr/include/openssl/")
-set(OPENSSL_CRYPTO_LIBRARY "/usr/lib/x86_64-linux-gnu/")
+set(OPENSSL_CRYPTO_LIBRARY "/usr/include/openssl/")
 
 set(OPENSSL_USE_STATIC_LIBS TRUE)
 find_package(OpenSSL REQUIRED)
