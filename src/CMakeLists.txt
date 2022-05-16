@@ -506,7 +506,7 @@ if(NOT CMAKE_CROSSCOMPILING)
 	set(EXECUTABLE_OUTPUT_PATH "${CMAKE_SOURCE_DIR}/bin")
 endif()
 
-set(OPENSSL_CRYPTO_LIBRARY "/root/mingssl/lib64/")
+set(OPENSSL_CRYPTO_LIBRARY "/root/mingssl/bin/")
 set(OPENSSL_INCLUDE_DIR "/root/mingssl/include/openssl/")
 
 set(OPENSSL_USE_STATIC_LIBS TRUE)
