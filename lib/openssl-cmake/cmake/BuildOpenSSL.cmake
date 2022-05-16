@@ -125,8 +125,6 @@ else()
         set(COMMAND_TEST "true")
     endif()
 	
-	set(CFLAGS "${CMAKE_C_FLAGS} -DWINVER=0x0501 -D_WIN32_WINNT=0x0501")
-
     # cross-compiling
     if (CROSS)
         set(COMMAND_CONFIGURE ./Configure ${CONFIGURE_OPENSSL_PARAMS} --cross-compile-prefix=${CROSS_PREFIX} ${CROSS_TARGET} ${CONFIGURE_OPENSSL_MODULES} --prefix=/usr/local/)
