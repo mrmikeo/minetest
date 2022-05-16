@@ -500,7 +500,11 @@ if(USE_CURL)
 	include_directories(${CURL_INCLUDE_DIR})
 endif()
 
-include_directories(/root/district53/minetest/util/buildbot/build/build/lib/openssl-cmake/usr/local/include)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lcrypt32")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lcrypt32")
+
+
 
 # When cross-compiling assume the user doesn't want to run the executable anyway,
 # otherwise place it in <source dir>/bin/ since Minetest can only run from there.
