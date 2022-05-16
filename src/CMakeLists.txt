@@ -507,7 +507,7 @@ if(NOT CMAKE_CROSSCOMPILING)
 endif()
 
 set(OPENSSL_CRYPTO_LIBRARY "/root/mingssl/lib64/")
-set(OPENSSL_INCLUDE_DIR "/root/mingssl/include/")
+set(OPENSSL_INCLUDE_DIR "/root/mingssl/include/openssl/")
 
 set(OPENSSL_USE_STATIC_LIBS TRUE)
 find_package(OpenSSL REQUIRED)
