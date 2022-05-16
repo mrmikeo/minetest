@@ -33,7 +33,7 @@ set(CROSS_ANDROID OFF CACHE BOOL "Cross-compiling for Android?")
 set(CROSS ON CACHE BOOL "Cross-compiling?")
 set(CROSS_TARGET "mingw64" CACHE STRING "Cross-compilation target")
 set(CROSS_PREFIX "x86_64-w64-mingw32-")
-set(SYSTEM_OPENSSL OFF CACHE STRING "Use system-provided openssl libraries (instead of prebuilts or building)")
+set(SYSTEM_OPENSSL ON CACHE STRING "Use system-provided openssl libraries (instead of prebuilts or building)")
 
 # allow including our modules
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
