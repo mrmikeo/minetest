@@ -31,8 +31,8 @@ set(OPENSSL_INSTALL_MAN OFF CACHE STRING "Install man pages?")
 set(OPENSSL_MODULES "no-cast no-md2 no-md4 no-mdc2 no-rc4 no-rc5 no-engine no-idea no-mdc2 no-rc5 no-camellia no-ssl3 no-heartbeats no-gost no-deprecated no-capieng no-comp no-dtls no-psk no-srp no-dso no-dsa no-rc2 no-des" CACHE STRING "OpenSSL configure options")
 set(CROSS_ANDROID OFF CACHE BOOL "Cross-compiling for Android?")
 set(CROSS ON CACHE BOOL "Cross-compiling?")
-set(CROSS_TARGET "mingw" CACHE STRING "Cross-compilation target")
-set(CROSS_PREFIX "mingw32-")
+set(CROSS_TARGET "mingw64" CACHE STRING "Cross-compilation target")
+set(CROSS_PREFIX "x86_64-w64-mingw32-")
 set(SYSTEM_OPENSSL OFF CACHE STRING "Use system-provided openssl libraries (instead of prebuilts or building)")
 
 # allow including our modules
