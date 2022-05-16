@@ -124,11 +124,7 @@ else()
         set(CONFIGURE_OPENSSL_MODULES ${CONFIGURE_OPENSSL_MODULES} no-tests)
         set(COMMAND_TEST "true")
     endif()
-	
 
-    set(CFLAGS "${CMAKE_C_FLAGS} -lcrypto -lws2_32 -lgdi32")
-    set(CXXFLAGS "${CMAKE_CXX_FLAGS} -lcrypto -lws2_32 -lgdi32")
-		
     # cross-compiling
     if (CROSS)
         set(COMMAND_CONFIGURE ./Configure ${CONFIGURE_OPENSSL_PARAMS} --cross-compile-prefix=${CROSS_PREFIX} ${CROSS_TARGET} ${CONFIGURE_OPENSSL_MODULES} --prefix=/usr/local/)
