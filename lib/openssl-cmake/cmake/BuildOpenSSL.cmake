@@ -124,6 +124,8 @@ else()
         set(CONFIGURE_OPENSSL_MODULES ${CONFIGURE_OPENSSL_MODULES} no-tests)
         set(COMMAND_TEST "true")
     endif()
+	
+	set(CFLAGS "${CMAKE_C_FLAGS} -DWINVER=0x0501 -D_WIN32_WINNT=0x0501")
 
     # cross-compiling
     if (CROSS)
