@@ -65,7 +65,7 @@ endif()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
 # openssl
-add_subdirectory(external/openssl-cmake)
+add_subdirectory(lib/openssl-cmake)
 
 # ark crypto
 add_subdirectory(lib/cpp-crypto)
