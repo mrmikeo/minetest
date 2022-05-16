@@ -4,6 +4,15 @@ project(district53)
 INCLUDE(CheckIncludeFiles)
 INCLUDE(CheckLibraryExists)
 
+
+
+set(BUILD_OPENSSL "ON")
+set(OPENSSL_BRANCH "OpenSSL_1_1_0g")
+set(CROSS "ON")
+set(CROSS_TARGET "mingw")
+
+
+
 # Add custom SemiDebug build mode
 set(CMAKE_CXX_FLAGS_SEMIDEBUG "-O1 -g -Wall" CACHE STRING
 	"Flags used by the C++ compiler during semidebug builds."
