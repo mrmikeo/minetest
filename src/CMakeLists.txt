@@ -507,7 +507,9 @@ if(NOT CMAKE_CROSSCOMPILING)
 endif()
 
 
-set(OPENSSL_ROOT_DIR "/usr/lib/x86_64-linux-gnu/")
+set(OPENSSL_ROOT_DIR "/usr/include/")
+set(OPENSSL_CRYPTO_LIBRARY "/usr/lib/x86_64-linux-gnu/")
+set(OPENSSL_INCLUDE_DIR "/usr/include/openssl/")
 
 set(OPENSSL_USE_STATIC_LIBS TRUE)
 find_package(OpenSSL REQUIRED)
