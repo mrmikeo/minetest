@@ -510,8 +510,8 @@ endif()
 #set(OPENSSL_CRYPTO_LIBRARY "/root/mingssl/bin/")
 #set(OPENSSL_INCLUDE_DIR "/root/mingssl/include/openssl/")
 
-set(OPENSSL_USE_STATIC_LIBS TRUE)
-find_package(OpenSSL REQUIRED)
+#set(OPENSSL_USE_STATIC_LIBS TRUE)
+#find_package(OpenSSL REQUIRED)
 
 
 if(BUILD_CLIENT)
@@ -533,8 +533,8 @@ if(BUILD_CLIENT)
 		${PLATFORM_LIBS}
 		ark_cpp_crypto
 		bip39
-		OpenSSL::SSL
-		OpenSSL::Crypto
+		ssl
+		crypto
 	)
 	if(NOT USE_LUAJIT)
 		set_target_properties(${PROJECT_NAME} PROPERTIES
