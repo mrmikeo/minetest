@@ -126,10 +126,6 @@ else()
     endif()
 	
 	
-	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lcrypt32 -lws2_32")
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lcrypt32 -lws2_32")
-
-	
 	
     # cross-compiling
     if (CROSS)
