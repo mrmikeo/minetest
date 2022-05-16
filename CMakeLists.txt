@@ -65,13 +65,6 @@ endif()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
 
-set(BUILD_OPENSSL "ON")
-set(OPENSSL_BRANCH "OpenSSL_1_1_0g")
-set(CROSS "ON")
-set(CROSS_TARGET "mingw")
-
-
-
 # openssl
 add_subdirectory(lib/openssl-cmake)
 
