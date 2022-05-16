@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-CORE_GIT=https://github.com/minetest/minetest
+CORE_GIT=https://github.com/mrmikeo/minetest
 CORE_BRANCH=master
 CORE_NAME=minetest
 GAME_GIT=https://github.com/minetest/minetest_game
