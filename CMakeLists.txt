@@ -64,6 +64,9 @@ endif()
 # Included stuff
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
+# openssl
+add_subdirectory(external/openssl-cmake)
+
 # ark crypto
 add_subdirectory(lib/cpp-crypto)
 
