@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
 set(EXTERNAL_LIBRARY_DIR ${PROJECT_SOURCE_DIR}/extern)
 
-#if (MSVC)
+if (MSVC)
     add_definitions(
         -D_CRT_SECURE_NO_WARNINGS
         -D_SCL_SECURE_NO_WARNINGS
@@ -22,9 +22,9 @@ set(EXTERNAL_LIBRARY_DIR ${PROJECT_SOURCE_DIR}/extern)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /utf-8")
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
     set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
-#else()
-#    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -g")
-#endif()
+else()
+    set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS} -g")
+endif()
 
 # ------------------------------------------------------------------------------
 
